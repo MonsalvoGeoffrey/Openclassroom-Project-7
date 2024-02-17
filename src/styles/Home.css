@@ -1,0 +1,22 @@
+.card-list {
+    background: #F6F6F6;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    /* justify-content: space-around; */
+    justify-content: center;
+    margin: 48px 0;
+    gap: 4em;
+}
+
+@media screen and (width < 1000px) {
+    .card-list {
+        background: white;
+        flex-direction: column;
+        align-items: center;
+        padding: unset;
+        gap: 20px;
+    }
+}

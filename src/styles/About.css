@@ -1,0 +1,29 @@
+.dropdown-containers {
+    margin: 2em 6em;
+}
+
+.about-banner-wrapper {
+    width: 100%;
+    /* filter: brightness(0.6); */
+    height: 50%;
+}
+
+.about-banner {
+    width: 100%;
+    /* filter: brightness(0.6); */
+    /* height: 50%; */
+    border-radius: 20px;
+    height: 223px;
+    object-fit: cover;
+
+}
+
+@media screen and (width < 1000px) {
+    .dropdown-containers {
+        margin: 2em 0;
+    }
+
+    /* .about-banner {
+        height: 100%;
+    } */
+}

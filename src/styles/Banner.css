@@ -1,0 +1,32 @@
+.slogan {
+    width: 100%;
+    position: relative;
+}
+
+.slogan-img {
+    width: 100%;
+    filter: brightness(0.6);
+    border-radius: 20px;
+    height: 223px;
+    object-fit: cover;
+}
+
+.slogan-title {
+    position: absolute;
+    color: white;
+    /* inset: auto; */
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    font-size: 48px;
+    font-weight: 500;
+}
+
+
+@media screen and (width < 1000px) {
+    .slogan-title {
+        font-size: 24px;
+        left: 16px;
+        translate: 0 -50%;
+    }
+}

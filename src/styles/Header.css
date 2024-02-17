@@ -1,0 +1,41 @@
+/* .home-page {
+} */
+
+.flex-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    /* padding: 0 2rem; */
+    height: 10vh;
+}
+
+.banner-links {
+    /* flex: 0 1 20%; */
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
+}
+
+.banner-link {
+    text-decoration: none;
+    color: red;
+    font-size: 1.2rem;
+    /* font-weight: 600; */
+    /* transition: all 0.3s ease-in-out; */
+}
+
+.banner-link:hover {
+    text-decoration: underline;
+}
+
+@media screen and (width < 1000px) {
+    .flex-nav {
+        padding: 20px;
+    }
+
+    .banner-link {
+        font-size: unset;
+    }
+}
