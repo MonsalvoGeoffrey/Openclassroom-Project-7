@@ -650,7 +650,7 @@ function Host() {
         <React.Fragment>
             <Header />
             <main className="main-content">
-                <div className='host-picture-container'>
+                <section className='host-picture-container'>
                     <img src={host.pictures[picture]} className='host-picture' alt='' />
                     {host.pictures.length > 1 ?
                         <React.Fragment>
@@ -659,9 +659,9 @@ function Host() {
                             <img className='host-picture-right' alt='right-arror' role='button' src={arrow_back} onClick={() => { setAndWrapPicture(picture + 1) }} />
                         </React.Fragment>
                         : <React.Fragment></React.Fragment>}
-                </div>
+                </section>
 
-                <div className='information'>
+                <section className='information'>
                     <div className='information-wrapper'>
                         <span className='information-title'>{host.title}</span>
                         <span className='information-location'>{host.location}</span>
@@ -682,13 +682,13 @@ function Host() {
                             })}
                         </div>
                     </div>
-                </div>
-                <div className='dropdown-area'>
+                </section>
+                <section className='dropdown-area'>
                     <Dropdown title="Description">{host.description}</Dropdown>
                     <Dropdown title="Équipements">
                         {host.equipments.map(equipment => <span key={equipment} className='equipment'>{equipment}</span>)}
                     </Dropdown>
-                </div>
+                </section>
             </main>
             <Footer />
         </React.Fragment>
