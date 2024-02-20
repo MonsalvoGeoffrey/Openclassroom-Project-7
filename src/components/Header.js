@@ -5,13 +5,15 @@ import '../styles/Header.css'
 
 function Header() {
     return (
-        <nav className='flex-nav'>
-            <img src={logo} alt="Logo" />
-            <div className='banner-links'>
-                <Link to="/" className='banner-link'>Accueil</Link>
-                <Link to="/about" className='banner-link'>A propos</Link>
-            </div>
-        </nav>
+        <header>
+            <nav className='flex-nav'>
+                <img src={logo} alt="Logo" />
+                <div className='banner-links'>
+                    <Link to="/" className='banner-link'>Accueil</Link>
+                    <Link to="/about" className='banner-link'>A propos</Link>
+                </div>
+            </nav>
+        </header>
     );
 }
 

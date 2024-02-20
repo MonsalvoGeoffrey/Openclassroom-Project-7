@@ -631,10 +631,10 @@ function Home() {
         <React.Fragment>
             <Header />
             <main className="main-content">
-                <div className="slogan">
+                <section className="slogan">
                     <img src={bk_home} alt="" className="slogan-img" />
                     <h1 className="slogan-title">Chez vous, partout et ailleurs</h1>
-                </div>
+                </section>
                 <section className="card-list">
                     {data.map((item, index) => {
                         return <Card key={item.id} name={item.title} cover={item.cover} hostId={item.id} />
